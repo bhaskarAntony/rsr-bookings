@@ -28,7 +28,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider">
+          <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider">
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-6 mb-4">
@@ -41,14 +41,14 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-3xl p-5 text-white">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-5 text-white">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
             <hr /><br />
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                    <Phone size={24} />
                   <div>
-                    <div className="text-sm text-green-100 mb-1">Call Us</div>
+                    <div className="text-sm text-blue-100 mb-1">Call Us</div>
                     <a href="tel:+919876543210" className="text-lg font-semibold hover:text-yellow-400 transition-colors">
                       +91 99001 97160
                     </a>
@@ -65,7 +65,7 @@ export default function Contact() {
                   </div> */}
                     <Mail size={24} />
                   <div>
-                    <div className="text-sm text-green-100 mb-1">Email Us</div>
+                    <div className="text-sm text-blue-100 mb-1">Email Us</div>
                     <a href="mailto:rsrtoursandtravelsblr@gmail.com" style={{wordWrap:"break-word"}} className="text-lg font-semibold hover:text-yellow-400 transition-colors w-full">
                       rsrtoursandtravelsblr<br/>@gmail.com
                     </a>
@@ -79,7 +79,7 @@ export default function Contact() {
                   </div> */}
                   <MapPin size={24} />
                   <div>
-                    <div className="text-sm text-green-100 mb-1">Visit Us</div>
+                    <div className="text-sm text-blue-100 mb-1">Visit Us</div>
                     <div className="text-lg font-semibold">
                       No.21/1, 1st Main, 1st Cross, <br /> RMS Colony, Bhattarahalli
                       <br />
@@ -94,11 +94,11 @@ export default function Contact() {
                   </div> */}
                     <Clock size={24} />
                   <div>
-                    <div className="text-sm text-green-100 mb-1">Working Hours</div>
+                    <div className="text-sm text-blue-100 mb-1">Working Hours</div>
                     <div className="text-lg font-semibold">
                       24/7 Available
                       <br />
-                      <span className="text-sm text-green-100">Office: Mon-Sat, 9 AM - 6 PM</span>
+                      <span className="text-sm text-blue-100">Office: Mon-Sat, 9 AM - 6 PM</span>
                     </div>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export default function Contact() {
               </p>
               <a
                 href="tel:1800123456"
-                className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
+                className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
               >
                 +91 99001 97160
               </a>
@@ -125,8 +125,8 @@ export default function Contact() {
 
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-12">
-                  <div className="bg-green-100 rounded-full p-4 mb-4">
-                    <CheckCircle className="text-green-600" size={48} />
+                  <div className="bg-blue-100 rounded-full p-4 mb-4">
+                    <CheckCircle className="text-blue-600" size={48} />
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h4>
                   <p className="text-gray-600 text-center">
@@ -146,7 +146,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         placeholder="Enter your name"
                       />
                     </div>
@@ -161,7 +161,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -178,7 +178,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         placeholder="+91 98765 43210"
                       />
                     </div>
@@ -192,7 +192,7 @@ export default function Contact() {
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       >
                         <option value="">Select a service</option>
                         <option value="corporate">Corporate Transportation</option>
@@ -217,14 +217,14 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows="5"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                       placeholder="Tell us about your requirements..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-green-600 to-green-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send size={20} />
                     Send Message

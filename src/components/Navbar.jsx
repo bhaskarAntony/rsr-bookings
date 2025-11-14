@@ -31,13 +31,13 @@ export default function Navbar({ onBookingOpen }) {
             <img
               src="https://www.rsr-tours.com/static/media/logoRSR.520d3b5c1fbc05c845d5.jpg"
               alt="RSR Tours"
-              className="h-9 sm:h-10"
+              className="h-9 sm:h-12 rounded"
             />
           </a>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-7">
-            {['Home', 'About', 'Services', 'Gallery', 'Reviews', 'Contact'].map((item) => (
+            {['Home', 'About', 'Services', 'Reviews', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -50,7 +50,7 @@ export default function Navbar({ onBookingOpen }) {
               onClick={onBookingOpen}
               className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all"
             >
-              Book a Ride
+              Book a Demo
             </button>
           </div>
 
@@ -100,7 +100,7 @@ export default function Navbar({ onBookingOpen }) {
                 { label: 'Home', id: 'home' },
                 { label: 'About', id: 'about' },
                 { label: 'Services', id: 'services' },
-                { label: 'Gallery', id: 'gallery' },
+                // { label: 'Gallery', id: 'gallery' },
                 { label: 'Reviews', id: 'reviews' },
                 { label: 'Contact', id: 'contact' },
               ].map((item) => (

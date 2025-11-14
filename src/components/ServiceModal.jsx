@@ -131,7 +131,7 @@ export default function ServiceModal({ isOpen, onClose, service, onBooking }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 bg-black/50 backdrop-blur-sm">
       <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-        <div className={`bg-gradient-to-br from-gray-900 via-green-800 to-gray-900 p-5 rounded-t-3xl flex items-start justify-between`}>
+        <div className={`bg-gradient-to-br from-gray-900 via-blue-800 to-gray-900 p-5 rounded-t-3xl flex items-start justify-between`}>
           <div className="flex items-start gap-4">
             {/* <div className="bg-white/20 backdrop-blur-md p-4 rounded-2xl">
               <service.icon className="text-white" size={40} />
@@ -159,15 +159,15 @@ export default function ServiceModal({ isOpen, onClose, service, onBooking }) {
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Key Features & Benefits</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {details.highlights?.map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 bg-green-50 p-4 rounded-xl">
-                  <CheckCircle className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
+                <div key={index} className="flex items-start gap-3 bg-blue-50 p-4 rounded-xl">
+                  <CheckCircle className="text-blue-600 flex-shrink-0 mt-0.5" size={20} />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-green-100 p-6 rounded-2xl">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl">
             <h3 className="text-xl font-bold text-gray-900 mb-3">Pricing Information</h3>
             <p className="text-lg text-gray-700 mb-4">{details.pricing}</p>
             <p className="text-sm text-gray-600">
@@ -197,7 +197,7 @@ export default function ServiceModal({ isOpen, onClose, service, onBooking }) {
                 onClose();
                 onBooking();
               }}
-              className="flex-1 bg-gradient-to-r from-green-600 to-green-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2"
+              className="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2"
             >
               Book This Service
               <ArrowRight size={20} />

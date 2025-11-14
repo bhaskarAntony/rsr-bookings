@@ -73,13 +73,13 @@ export default function Services({ onServiceClick }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
             <Sparkles size={16} />
             Our Comprehensive Services
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-4 mb-3 leading-tight">
             Travel Solutions for
-            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent"> Every Need</span>
+            <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent"> Every Need</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From daily commutes to luxury getaways — we deliver safe, reliable, and technology-powered transportation across Karnataka.
@@ -126,21 +126,21 @@ export default function Services({ onServiceClick }) {
                 <div className="space-y-1.5">
                   {service.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center text-xs sm:text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 flex-shrink-0" />
                       <span className="truncate">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* CTA Button */}
-                <button className="mt-4 w-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-2.5 sm:py-3 rounded-xl font-semibold text-sm sm:text-base hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3">
+                <button className="mt-4 w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white py-2.5 sm:py-3 rounded-xl font-semibold text-sm sm:text-base hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3">
                   Explore Service
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
 
               {/* Hover Glow */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-emerald-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             </div>
           ))}
         </div>
@@ -148,8 +148,8 @@ export default function Services({ onServiceClick }) {
         {/* Trust Indicators */}
         <div className="mt-16 md:mt-20 text-center">
           <p className="text-sm text-gray-500">
-            Trusted by <span className="font-bold text-emerald-600">500+ companies</span> across Karnataka • 
-            <span className="font-bold text-emerald-600"> 99.8% on-time performance</span>
+            Trusted by <span className="font-bold text-blue-600">More companies</span> across Karnataka • 
+            <span className="font-bold text-blue-600"> 99.8% on-time performance</span>
           </p>
         </div>
       </div>

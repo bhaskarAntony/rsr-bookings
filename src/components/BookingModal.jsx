@@ -46,10 +46,10 @@ export default function BookingModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 bg-black/50 backdrop-blur-sm">
       <div className="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 bg-gradient-to-r from-green-600 to-green-700 p-6 rounded-t-3xl flex items-center justify-between">
+        <div className="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-700 p-6 rounded-t-3xl flex items-center justify-between">
           <div>
             <h2 className="text-3xl font-bold text-white">Book Your Ride</h2>
-            <p className="text-green-100 mt-1">Fill in the details and we'll get back to you shortly</p>
+            <p className="text-blue-100 mt-1">Fill in the details and we'll get back to you shortly</p>
           </div>
           <button
             onClick={onClose}
@@ -62,8 +62,8 @@ export default function BookingModal({ isOpen, onClose }) {
         <div className="p-8">
           {submitted ? (
             <div className="flex flex-col items-center justify-center py-12">
-              <div className="bg-green-100 rounded-full p-4 mb-4">
-                <CheckCircle className="text-green-600" size={64} />
+              <div className="bg-blue-100 rounded-full p-4 mb-4">
+                <CheckCircle className="text-blue-600" size={64} />
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-2">Booking Confirmed!</h3>
               <p className="text-gray-600 text-center max-w-md">
@@ -83,7 +83,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -98,7 +98,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="+91 98765 43210"
                   />
                 </div>
@@ -114,7 +114,7 @@ export default function BookingModal({ isOpen, onClose }) {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function BookingModal({ isOpen, onClose }) {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                   <option value="">Select a service</option>
                   <option value="corporate">Corporate Transportation</option>
@@ -154,7 +154,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.pickupLocation}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Enter pickup address"
                   />
                 </div>
@@ -170,7 +170,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.dropLocation}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Enter drop address"
                   />
                 </div>
@@ -188,7 +188,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.date}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
 
@@ -203,7 +203,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.time}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
 
@@ -217,7 +217,7 @@ export default function BookingModal({ isOpen, onClose }) {
                     value={formData.passengers}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     {[1, 2, 3, 4, 5, 6, 7, '8+'].map((num) => (
                       <option key={num} value={num}>
@@ -237,7 +237,7 @@ export default function BookingModal({ isOpen, onClose }) {
                   value={formData.notes}
                   onChange={handleChange}
                   rows="3"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                   placeholder="Any special requirements or preferences..."
                 />
               </div>
@@ -252,7 +252,7 @@ export default function BookingModal({ isOpen, onClose }) {
                 </button> */}
                 <button
                   type="submit"
-                  className="flex-1 bg-gradient-to-r from-green-600 to-green-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all"
+                  className="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all"
                 >
                   Confirm Booking
                 </button>
