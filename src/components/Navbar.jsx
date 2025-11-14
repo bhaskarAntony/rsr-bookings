@@ -131,13 +131,13 @@ export default function Navbar({ onBookingOpen }) {
                 <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
                   <Phone className="w-5 h-5 text-blue-600" />
                 </div>
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 99001 97160</span>
               </a>
               <a href="mailto:info@rsrtours.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
                 <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
                   <Mail className="w-5 h-5 text-blue-600" />
                 </div>
-                <span className="font-medium">info@rsrtours.com</span>
+                <span className="font-medium">rsrtoursandtravelsblr@gmail.com</span>
               </a>
             </div>
           </div>
